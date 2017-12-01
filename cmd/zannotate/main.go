@@ -51,7 +51,7 @@ func main() {
 	flags.StringVar(&conf.RoutingConf.ASNamesPath, "as-names", "", "path to as names file")
 	// json annotation configuration
 	flags.StringVar(&conf.JSONIPFieldName, "json-ip-field", "ip", "key in JSON that contains IP address")
-	flags.StringVar(&conf.JSONAnnotationFieldName, "json-annotation-field", "zannotate", "key that metadata is injeted at")
+	flags.StringVar(&conf.JSONAnnotationFieldName, "json-annotation-field", "zannotate", "key that metadata is injected at")
 
 	flags.Parse(os.Args[1:])
 	if conf.LogFilePath != "" {
